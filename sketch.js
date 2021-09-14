@@ -43,34 +43,14 @@ wall.shapeColor=color("white")
 
   }
 
-if(hasCollided(bullet,wall)){
-bullet.velocityX=0;
-var damage=0.5*weight*Speed*speed/(thickness*thickness*thickness)
-if(damage>10){
-  wall.shapeColor=color(255,0,0)
-}
-if(damage<10){
-
-  wall.shapeColor=color(0,255,0)
-}
-}
-
-
 
   drawSprites();
 }
 
-function hasCollided(lbullet,lwall){
-bulletRightEdge=lbullet.x+lwall.width
-wallLeftEdge=lwall.x;
-if(bulletRightEdge>=wallLeftEdge){
-  return true;
-}
-return false;
 
 
 
-}
+
 
 
 
