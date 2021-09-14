@@ -37,13 +37,7 @@ wall.shapeColor=color("white")
   wall.shapeColor=color("white")
   bullet.shapeColor=color(0,255,0)
 }
-
-
-
-
   }
-
-
   drawSprites();
 }
 
